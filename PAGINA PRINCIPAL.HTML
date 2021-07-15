@@ -1,0 +1,134 @@
+<html
+ <head>
+  <style>
+   body{
+  background-color:  Lavender;
+  }
+  .enlace{
+  overflow: hidden;
+  background-color: lightblue;
+ }
+ .button {
+  background-color: #cc99ff;
+  border: inset;
+  color: withe;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  float:left; 
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px rgb(100,0,70);/*para que se vea como sombra*/
+  }
+  .button1:hover {
+  background-color: #ff9966;
+  color: white;
+  border-radius: 12px;
+  }
+/* estilo en enlace */
+.enlace  a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px ;
+  text-decoration: none;
+}
+/* cambiar color cuando se posiciona el raton */
+.enlace a:hover {
+  background-color:	MediumSlateBlue;
+  color: white;
+}
+</style>
+  
+  <div class="encabezado">
+  <h1>Futbol Real</h1>
+</div>
+
+<div class="enlace">
+  <a href="Noticias.html">noticias</a>
+  <a href="MasDeportes.html">MasDeportes</a>
+  <a href="LigaMX.html">LigaMX</a>
+</div>
+
+  </head>
+  <script>
+function contenido(){
+document.getElementById("texto").innerHTML="CAMBIO A MAYUSCULA.";
+}
+</script>
+<script>
+window.alert("Bienvenidos a la capital del futbol!");
+</script>
+<script>
+var dia;
+switch (new Date().getDay()){
+case 0:
+dia="Domingo";
+break;
+case 1:
+dia="Lunes";
+break;
+case 2:
+dia="Martes";
+break;
+case 3:
+dia="Mierc&oacute;les";
+break;
+case 4:
+dia="Jueves";
+break;
+case 5:
+dia="Viernes";
+break;
+case 6:
+dia="S&aacute;bado";
+break;
+}
+document.getElementById("semana").innerHTML = "hoy es: " + dia;
+</script>
+  <body>
+  
+  <button onclick="ventana()">Pulsa boton</button>
+  <p id="mensaje"></p>
+  <script>
+  function ventana() {
+  var txt;
+  if (confirm("¿Te la estas pasando bien?")) {
+     txt = "pulso Si!";
+	 }
+  else {
+  txt = "pulso Para nada!";
+  }
+document.getElementById("Mensaje").innerHTML = txt;
+}
+ </script>
+  <h1> 
+       NotiFutbol 
+  </h1>
+  <p class="tamano"> Las ultimas noticias del futbol del tercer mundo </p>
+  <h2 style="border:3px solid lightblue;Text-align: center;"> Salen a la luz los precios de las entradas para la final de Champions: casi 600 euros la más cara </h2>
+  <p id="colores" > Un estadio que tiene capacidad para 50.000 espectadores y que podrá acoger a 6.000 aficionados de cada equipo según el reparto anunciado por la UEFA. <br>
+  Uno de los dos contendientes, el Chelsea, ha anunciado los precios de las cuatro categorías de entradas que pondrán a disposición de sus hinchas.<br>
+  <center>
+  Categoría 1: 596,27 <br>
+  Categoría 2: 447,59<br>
+  Categoría 3: 178,88<br>
+  Categoría 4: 69,49<br>
+  Silla de ruedas: 69,49<br>
+  Ambulant: 69,49<br>
+  </center>
+  Aún está por determinar qué porcentaje de entradas serán repartidas por la UEFA para sus compromisos con patrocinadores y agentes relacionados con la máxima competición de clubes de Europa.<br>
+   <a href="C:\Users\porta\OneDrive\Imágenes\Pagina web\ch.jpg" target="_blank"> <img src="C:\Users\porta\OneDrive\Imágenes\Pagina web\ch.jpg" alt= "da click para ver mas grande" width=30% height=27% align="rigth"></a>
+    <a href="C:\Users\porta\OneDrive\Imágenes\Pagina web\ch2.jpg" target="_blank"> <img src="C:\Users\porta\OneDrive\Imágenes\Pagina web\ch2.jpg" alt= "da click para ver mas grande" width=30% height=27% align="rigth"></a>
+  <a href="C:\Users\porta\OneDrive\Imágenes\Pagina web\fn.jpg" target="_blank"> <img src="C:\Users\porta\OneDrive\Imágenes\Pagina web\fn.jpg" alt= "da click para ver mas grande" width=30% height=27% align="rigth"></a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PZWMbWVByBk?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1F52qmrDyVU?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br>
+  <br>
+<Center> 
+ <a class="button button1" href="https://forms.gle/oRv7DfC65zhvHBFJA" target="_blank">Formulario para ayudar a la pagina</a>
+</Center>
+</html>
